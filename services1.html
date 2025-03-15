@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: url("images/background.jpg") no-repeat center/cover;
+            padding: 50px 5%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            backdrop-filter: blur(30px);
+            padding: 20px;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            border-bottom: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            border-color: #fff;
+        }
+
+        /* Cards Grid Section */
+        .cards-container {
+            display: grid;
+            margin: 50px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+
+        .card1 {
+            background: rgba(239, 227, 227, 0.926);
+            font-size: 20px;
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            text-align:left;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card2{
+            background: rgba(239, 227, 227, 0.926);
+            font-size: 20px;
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align:left;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card3{
+            background: rgba(239, 227, 227, 0.926);
+            font-size: 20px;
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card4 {
+            background: rgba(239, 227, 227, 0.926);
+            font-size: 20px;
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .header{
+          color: #fff;
+          margin-top: 80px;
+          margin-left: 50px;
+          
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="services1.html" class="active">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <div class="header">
+          <h2> Services </h2>
+        </div>
+      
+        <!-- Cards Section -->
+        <div class="cards-container">
+            <div class="card1">
+                <h2>Web Development</h2>
+                <p>I specialize in building modern, responsive websites using React, HTML, CSS, and JavaScript. From front-end design to seamless user experience, I ensure every project is optimized, fast, and interactive.</p>
+            </div>
+            <div class="card2">
+                <h2>Backend Basics</h2>
+                <p>I have experience working with APIs, chatbot integrations, and backend functionalities to make applications more interactive and dynamic. Whether it's fetching data, handling requests, or integrating AI-powered chatbots, I focus on efficiency and performance.</p>
+            </div>
+            <div class="card3">
+                <h2>Database Management</h2>
+                <p>I work with SQL databases to efficiently store, retrieve, and manage data. From designing structured databases to optimizing queries for performance, I ensure seamless data handling with a focus on security and scalability.</p>
+            </div>
+            <div class="card4">
+                <h2>Project Development</h2>
+                <p>I love turning ideas into real-world solutions. From identifying problems to executing innovative projects, I focus on practical problem-solving. Whether it's entrepreneurial platforms, AI-powered solutions, or tech-driven social impact projects, I’m passionate about bringing ideas to life.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("images/background.jpg") no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 5%;
+}
+
+.container{
+    width:100%;
+    height: 100%;
+    background: rgba(255,255,255, .1);
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+ }
+
+
+/* Header & Navbar */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration:none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: 2s; 
+}
+
+.navbar a:hover,
+.navbar a.active {
+    border-bottom: 2px solid #fff;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 80px; /* Added margin below navbar */
+}
+
+.contact-form {
+    
+    padding: 30px;
+    border-radius: 10px;
+    width: 55%;
+}
+
+.contact-form h2 {
+    color: white;
+    font-size: 26px;
+}
+
+.contact-form p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-group input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    background: #ccc;
+    border: 1px solid #333;
+    color: black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background: green;
+    padding: 12px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    background-color: greenyellow;
+    color: black;
+
+}
+
+/* Contact Info */
+.contact-info {
+    width: 40%;
+   
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 55px;
+    font-size: 30px;
+}
+
+.info-item i {
+    font-size: 20px;
+    background: #00ff88;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.info-item h4 {
+    font-size: 16px;
+    color: white;
+}
+
+.info-item p {
+    font-size: 18px;
+    color: #ccc;
+}
+.info-item ion-icon {
+    font-size: 24px;
+    background: #fff;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+}
